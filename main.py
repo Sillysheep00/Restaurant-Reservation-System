@@ -333,7 +333,7 @@ def delete_reservation():
 
 # defining read_menu_file() function to open restaurant menu and read the content (dishes) inside
 def read_menu_file():
-    with open('menuItems_22017503.txt', 'r') as files:
+    with open('menuItems.txt', 'r') as files:
         my_menu_list = files.readlines()
     return my_menu_list
 
@@ -407,7 +407,7 @@ def print_reservations(reservation_list):
 def main_program():
     clear_screen()
     print('- Welcome to Charming Thyme Trattoria! -\n')
-    file_path = "reservation_22017503.txt"
+    file_path = "reservation.txt"
     global my_reservation_list
     my_reservation_list = read_file(file_path)
     print("All Bookings:\n")
